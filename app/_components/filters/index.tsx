@@ -16,7 +16,7 @@ const Filters = ({ sports }: { sports: Sport[] }) => {
   const isMobile = useMediaQuery("only screen and (max-width: 768px)");
 
   const q = searchParams.get("q") || "";
-  const category = searchParams.get("category" || "all");
+  const category = searchParams.get("category") || "all";
   const sport = searchParams.get("sport") || "";
   const sort = searchParams.get("sort") || "";
   const dir = searchParams.get("dir") || "desc";
